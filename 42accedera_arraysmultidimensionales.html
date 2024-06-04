@@ -1,0 +1,39 @@
+<script>
+    /*
+Acceda a matrices multidimensionales con índices
+Una forma de pensar en una matriz multidimensional es como una matriz de matrices . Cuando usa corchetes para acceder a su matriz, el primer conjunto de corchetes se refiere a las entradas en la matriz más externa (el primer nivel), y cada par adicional de corchetes se refiere al siguiente nivel de entradas internas.
+
+Ejemplo
+
+const arr = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [[10, 11, 12], 13, 14]
+];
+
+const subarray = arr[3];
+const nestedSubarray = arr[3][0];
+const element = arr[3][0][1];
+
+
+En este ejemplo, subarraytiene el valor [[10, 11, 12], 13, 14], nestedSubarraytiene el valor [10, 11, 12]y elementtiene el valor 11.
+
+
+ */
+
+//Usando notación entre corchetes, seleccione un elemento myArrayque myDatasea igual a 8.
+
+
+
+const myArray = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [[10, 11, 12], 13, 14],
+];
+
+const myData = myArray[2][1];
+
+console.log(myData);
+</script>

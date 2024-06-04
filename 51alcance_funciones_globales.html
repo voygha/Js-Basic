@@ -1,0 +1,36 @@
+<script>
+    /*
+
+Alcance y funciones globales
+En JavaScript, el alcance se refiere a la visibilidad de las variables. Las variables que se definen fuera de un bloque de funciones tienen alcance global . Esto significa que se pueden ver en todas partes de su código JavaScript.
+
+Las variables que se declaran sin las palabras clave leto constse crean automáticamente en el globalámbito. Esto puede crear consecuencias no deseadas en otras partes de su código o al ejecutar una función nuevamente. Siempre debes declarar tus variables con leto const.
+
+Usando leto const, declara una variable global nombrada myGlobalfuera de cualquier función. Inicialícelo con un valor de 10.
+
+Función interna fun1, asignar 5sin oopsGlobal usarvar las palabras clave leto const.
+ */
+
+// Declare the myGlobal variable below this line
+
+let myGlobal = 10;
+let oopsGlobal = 5;
+
+function fun1() {
+  // Assign 5 to oopsGlobal here
+  
+}
+
+// Only change code above this line
+
+function fun2() {
+  let output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+</script>
